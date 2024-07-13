@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice-works</title>
+    <style>
+        .box-container{
+            display: flex;
+            height: 90vh;
+            border: 2px solid darkslategray;
+            padding: 15px;
+            gap: 15px ;
+
+        }
+        .left{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: gainsboro;
+            border: 2px solid gray;
+            width: 33%;
+            font-size: 2em;
+            border-radius: 15px;
+            
+        }
+        .right{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(250, 209, 239);
+            border: 2px solid rgb(197, 57, 141);
+            width: 67%;
+            font-size: 2em;
+            border-radius: 15px;
+        }
+        @media screen and (max-width:576px) {
+            .box-container{
+                flex-direction: column;
+            }
+            .left,.right{
+                width: 100%;
+            }
+            .left{
+                height: 30vh;
+            }
+            .right{
+                height: 60vh;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box-container">
+        <div class="box left">Left</div>
+        <div class="box right">Right</div>
+    </div>
+</body>
+</html>
